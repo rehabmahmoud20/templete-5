@@ -1,0 +1,217 @@
+:root {
+  --main-color: rgb(25, 40, 63);
+  --green-color: rgb(197, 202, 202);
+  --yellow-color: #ffc400;
+  --white-color: #fff;
+  --section-color: #eff7fa;
+}
+.btn-style {
+  background-color: var(--green-color);
+  padding: 0.5rem 1rem;
+  color: var(--main-color);
+}
+.btn-style:hover {
+  color: var(--yellow-color);
+}
+.btn-style:focus {
+  box-shadow: none;
+}
+.main-title::after {
+  content: "";
+  height: 2px;
+  width: 120px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* start navbar */
+.navbar {
+  background-color: var(--main-color);
+  transition: all 0.5s;
+}
+.navbar .nav-link {
+  color: var(--white-color);
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #0C7C83;
+  font-weight: bold;
+}
+.navbar .search {
+  color: var(--green-color);
+  border-left: solid 2px var(--green-color);
+  cursor: pointer;
+}
+.navbar .navbar-toggler:focus {
+  border-color: var(--white-color);
+  box-shadow: none;
+}
+.navscroll{
+  background-color: rgba(112, 116, 121,0.5);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  
+}
+
+/* end navbar */
+/* start landing */
+.one {
+  background-color: var(--yellow-color);
+  transform: skewY(-23deg) translateY(-325px);
+}
+.intro {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header {
+  background-color: var(--main-color);
+}
+
+/* end landing */
+/* start features */
+.features .icons {
+  height: 200px;
+}
+.features .icons i {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icons .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icons .pen {
+  color: var(--green-color);
+}
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+/* start features */
+/* start our-work */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.our-work ul li:not(.btn-style):hover {
+  color: var(--green-color);
+}
+.our-work .image {
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.our-work .image::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgb(51, 209, 204, 0.5);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  transition: 1s;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .image:hover::before {
+  transform: translateX(0);
+}
+/* end our-work */
+/* start stuff */
+.stuff .first-p {
+  max-width: 500px;
+}
+/* end stuff */
+/* start our team  */
+.our-team {
+  background-color: var(--section-color);
+}
+.our-team h2 {
+  color: var(--yellow-color);
+}
+.our-team .box h4 {
+  background-color: var(--green-color);
+}
+.our-team .box .team-content {
+  transition: transform 1s;
+}
+.our-team .box .team-content:hover {
+  transform: scale(1.1, 1.1);
+}
+.our-team .box .team-img {
+  transition: transform 1s;
+}
+.our-team .box .team-img:hover {
+  transform: scale(0.9);
+}
+/* end our team  */
+/* start tech  */
+.tech {
+  background-color: var(--main-color);
+}
+/* end tech  */
+
+/* start subscribe  */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe form input[type="email"] {
+  border-bottom: 1px solid var(--white-color);
+}
+.subscribe form input[type="email"]:focus {
+  outline: 0;
+}
+.subscribe form input::placeholder {
+  color: var(--white-color);
+}
+.subscribe form input[type="submit"] {
+  color: var(--yellow-color);
+}
+/* end subscribe  */
+/* start footer  */
+.footer {
+  background-color: var(--main-color);
+}
+.footer span:first-of-type {
+  color: var(--green-color);
+}
+.footer span:last-of-type {
+  color: var(--yellow-color);
+}
+.footer .contact ul  i{
+    height: 35px;
+    width: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer .contact ul{
+    width: fit-content;
+}
+.footer .fa-facebook {
+  background-color: #1877f2
+  ;
+}
+.footer .fa-twitter {
+  background-color:rgb(29, 161, 242);
+}
+.footer .fa-linkedin {
+  background-color: #0a66c2;
+}
+.footer .fa-youtube {
+  background-color: #ff0000;
+}
+
+/* end footer  */
+
+/* 
