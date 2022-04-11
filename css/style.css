@@ -35,8 +35,8 @@
   color: var(--white-color);
 }
 .navbar .nav-link.active,
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.navbar .nav-link:hover
+ {
   color: #0C7C83;
   font-weight: bold;
 }
