@@ -3,4 +3,4 @@
 * html/html5
 * css/css3
 * bootstarb v5.1
-* simple jquerry
+* jquerry
